@@ -18,6 +18,10 @@ Compare and update the inventory stored in a 2D array against a second 2D array 
 
 ### 3. No Repeats Please
 
+Return the number of total permutations of the provided string that don't have repeated consecutive letters. Assume that all characters in the provided string are each unique.
+
+For example, aab should return 2 because it has 6 total permutations (aab, aab, aba, aba, baa, baa), but only 2 of them (aba and aba) don't have the same letter (in this case a) repeating.
+
 ### 4. Pairwise
 
 ### 5. Implement Bubble Sort
