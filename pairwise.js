@@ -21,7 +21,7 @@
 // Second attempt
 // Time complexity: average case: O(n), worst case: O(n^2)
 // Space complexity: O(n)
-// Improvement: instead of using a nested loop, I use a hash map (object in JavaScript) to track the indices of elements seen.
+// Improvement: instead of using a nested loop, I use a hash map to track the indices of elements seen.
 function pairwiseImproved(arr, arg) {
     let sumIndices = 0;
     let usedIndices = new Set();
@@ -42,7 +42,7 @@ function pairwiseImproved(arr, arg) {
                     usedIndices.add(i); // Mark the current index as used
                     break; // Move to the next element in the array
                 }
-            } 
+            }
         }
 
         // Add the current element and its index to the map
