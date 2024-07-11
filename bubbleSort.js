@@ -12,9 +12,8 @@
 // and returns an array of these integers in sorted order from least to greatest.
 
 function bubbleSort(array) {
-    const n = array.length;
-    for (let i = 0; i < n - 1; i++) {
-        for (let j = 0; j < n - i - 1; j++) {
+    for (let i = 0; i < array.length - 1; i++) {
+        for (let j = 0; j < array.length - i - 1; j++) {
             if (array[j] > array[j + 1]) {
                 let temp = array[j];
                 array[j] = array[j + 1];
@@ -24,7 +23,3 @@ function bubbleSort(array) {
     }
     return array;
 }
-
-const array = [64, 34, 25, 12, 22, 11, 90];
-
-console.log(bubbleSort(array));
